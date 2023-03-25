@@ -1,0 +1,40 @@
+import React  from "react"; 
+import { Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom"; 
+import Card from 'react-bootstrap/Card';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import Base from "./Base";
+function Page() { 
+const history=useNavigate();
+
+   return(
+   
+   <Base thead=' PRE BOOKING OPEN ' tstyle='headstyle' footer='foot'children={
+   <div className='Home'> 
+
+ < Card border="secondary" style={{width: '18rem',height:'12rem' }} >
+        <Card.Header>match</Card.Header>
+        <Card.Body>
+          <Card.Title>india vs pak</Card.Title>
+          <Card.Text>
+            chennai 
+          </Card.Text> 
+          <Button onClick={()=>history('/Add')}>Book</Button>
+        </Card.Body>
+      </Card> 
+      < Card border="secondary" style={{width: '18rem',height:'12rem' }} >
+        <Card.Header>match</Card.Header>
+        <Card.Body>
+          <Card.Title>india vs pak</Card.Title>
+          <Card.Text>
+            chennai 
+          </Card.Text> 
+          <Button onClick={()=>history('./Add1')}>Book</Button>
+        </Card.Body>
+      </Card> 
+      
+      
+      </div>}></Base>
+   ) 
+} 
+export default Page;
