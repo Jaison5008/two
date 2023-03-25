@@ -13,9 +13,9 @@ const history=useNavigate();
    <div className='Home'> 
 
  < Card border="secondary" style={{width: '18rem',height:'12rem' }} >
-        <Card.Header>match</Card.Header>
+        <Card.Header>match 1</Card.Header>
         <Card.Body>
-          <Card.Title>india vs pak</Card.Title>
+          <Card.Title>india vs Australia</Card.Title>
           <Card.Text>
             chennai 
           </Card.Text> 
@@ -23,11 +23,11 @@ const history=useNavigate();
         </Card.Body>
       </Card> 
       < Card border="secondary" style={{width: '18rem',height:'12rem' }} >
-        <Card.Header>match</Card.Header>
+        <Card.Header>match 2</Card.Header>
         <Card.Body>
-          <Card.Title>india vs pak</Card.Title>
+          <Card.Title>india vs pakistan</Card.Title>
           <Card.Text>
-            chennai 
+            Banglore
           </Card.Text> 
           <Button onClick={()=>history('./Add1')}>Book</Button>
         </Card.Body>
